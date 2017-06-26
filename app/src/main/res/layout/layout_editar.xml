@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_condominio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="Condominio"
+        android:inputType="textPersonName" />
+
+    <CheckBox
+        android:id="@+id/cb_elevador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Elevador"
+        android:layout_below="@+id/et_condominio"
+        android:layout_alignStart="@+id/et_condominio" />
+
+    <Spinner
+        android:id="@+id/sp_aps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/cb_elevador"
+        android:layout_alignEnd="@+id/bt_cadastrar" />
+
+    <TextView
+        android:id="@+id/tv_aps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de apartamentos"
+        android:textSize="20sp"
+        android:layout_above="@+id/et_areatotal"
+        android:layout_alignStart="@+id/cb_elevador" />
+
+    <EditText
+        android:id="@+id/et_areatotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_aps"
+        android:layout_below="@+id/sp_aps"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Área total"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/bt_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/et_areatotal"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="60dp"
+        android:text="Editar" />
+</RelativeLayout>
